@@ -17,14 +17,14 @@ public class Exerc_04 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int salminimo, salfunc, qtdsal;
+        double salminimo, salfunc, qtdsal;
         
         Scanner entrada = new Scanner(System.in);
         System.out.println("Digite o valor do salario minimo: ");
-        salminimo = entrada.nextInt();
+        salminimo = entrada.nextDouble();
         
         System.out.println("Digite o valor do seu salario: ");
-        salfunc = entrada.nextInt();
+        salfunc = entrada.nextDouble();
         
         qtdsal = salfunc/salminimo;
         

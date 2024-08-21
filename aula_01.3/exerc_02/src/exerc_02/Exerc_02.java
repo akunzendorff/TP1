@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package exerc_03;
+package exerc_02;
 
 import java.util.Scanner;
 
@@ -11,21 +11,25 @@ import java.util.Scanner;
  *
  * @author fatec-dsm2
  */
-public class Exerc_03 {
+public class Exerc_02 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int dias, idade = 17;
+        // TODO code application logic here
+        
+        int quad, num;
         
         Scanner ler = new Scanner(System.in);
         
-        System.out.println("Digite sua idade: ");
-        idade = ler.nextInt();
+        System.out.println("Digite um número: ");
+        num = ler.nextInt();
         
-        dias = idade * 365; 
-        System.out.println("Voce já viveu " + dias + " dias.");
+        quad = num*num;
+        
+        System.out.println("O quadrado do número inserido é: "+quad);
+        
     }
     
 }
