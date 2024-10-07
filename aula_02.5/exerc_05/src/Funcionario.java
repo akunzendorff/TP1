@@ -85,11 +85,11 @@ public class Funcionario {
         setEnderecoFuncionario(JOptionPane.showInputDialog("Insira o endereço do funcionário: "));
         setTelefoneFuncionario(JOptionPane.showInputDialog("Insira o telefone do funcionário: "));
         setSalarioHora(Double.parseDouble(JOptionPane.showInputDialog("Insira o valor que esse funcionário recebe por hora trabalhada: ")));
-        setHorasTrabalhadas(Double.parseDouble(JOptionPane.showInputDialog("Insira a quantidade de horas trabalhadas: ")));
+        
     }
     
-    public double calcularSalarioFinal(){
-        setSalarioFinal(getHorasTrabalhadas() * getSalarioHora());
+    public double calcularSalarioFinal(int hrTrab){
+        setSalarioFinal(hrTrab * getSalarioHora());
         return getSalarioFinal();
     }
     
@@ -98,7 +98,6 @@ public class Funcionario {
         + "\nNome: " + getNomeFuncionario()
         + "\nEndereço: " + getEnderecoFuncionario()
         + "\nTelefone: " + getTelefoneFuncionario()
-        + "\nHoras trabalhadas: " + getHorasTrabalhadas()
         + "\nValor do salário por hora:" + getSalarioHora()
         +"\nValor do salário final: " + getSalarioFinal()
         );
