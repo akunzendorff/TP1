@@ -1,0 +1,10 @@
+create database exerc_01;
+use exerc_01;
+
+create table Usuário (
+id int primary key auto_increment,
+nome varchar(100),
+email varchar(100),
+login varchar(100),
+senha varchar(100)
+);

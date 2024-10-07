@@ -1,0 +1,9 @@
+create database exerc_02;
+use exerc_02;
+
+create table consultaProduto(
+id int primary key auto_increment,
+código int,
+nomeProduto varchar(100),
+descrição varchar(100)
+);
