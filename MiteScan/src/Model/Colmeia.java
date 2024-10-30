@@ -84,37 +84,37 @@ public class Colmeia {
         this.tipoAbelha = tipoAbelha;
     }
     
-    public void cadastrarUsuario(){
-        String sql = "Insert into colmeia (codigo, nome, email, login, senha, acesso) values " +
+    public void cadastrarColmeia(){
+        String sql = "Insert into colmeias (codigo, nome, locLat, locLong, tamanho, idAbelha) values " +
                 "(" + getCodigo() + ",'" + getNome() + "','" + getLocLat()
-                + "','" + getLocLong() + "','" + getTamanho() + "', " + getTipoAbelha() + " )";
+                + "','" + getLocLong() + "','" + getTamanho() + "', '" + getTipoAbelha() + "' )";
         
         con.executeSQL(sql);
         JOptionPane.showMessageDialog(null, "Registrado com sucesso!");  
     }
     
-    public ResultSet listarUsuario(){
+    public ResultSet listarColmeia(){
        ResultSet tabela;
        tabela = null;
         
-        String sql= "Select * from colmeia";
+        String sql= "Select * from colmeias";
         tabela = con.RetornarResultset(sql);
      return tabela;
     }
     
-    public void excluirUsuario(){
+    public void excluirColmeia(){
         String sql;
-        sql = "Delete from colmeia where codigo = " + getCodigo();
+        sql = "Delete from colmeisa where codigo = " + getCodigo();
         
         con.executeSQL(sql);
         JOptionPane.showMessageDialog(null, "Registro excluido com sucesso.");
     }
     
-    public void editarUsuario(){
+    public void editarColmeia(){
         String sql;
-        sql = "Update usuario set nome = '" + getNome() + "', loclat = '" + getLocLat()
+        sql = "Update colmeias set nome = '" + getNome() + "', loclat = '" + getLocLat()
                 + "', loclong = '" + getLocLong() + "', tamanho = '" + getTamanho()
-                + "', tipoAbelha = " + getTipoAbelha() + " where codigo = " + getCodigo();
+                + "', tipoAbelha = '" + getTipoAbelha() + "' where codigo = " + getCodigo();
         
         con.executeSQL(sql);
         JOptionPane.showMessageDialog(null, "Registro alterado com sucesso!");

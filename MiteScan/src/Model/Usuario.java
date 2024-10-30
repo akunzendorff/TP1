@@ -119,4 +119,14 @@ public class Usuario {
         con.executeSQL(sql);
         JOptionPane.showMessageDialog(null, "Registro alterado com sucesso!");
     }
+    
+    public ResultSet logar()
+      {
+          ResultSet tabela;
+          tabela = null;
+
+           String sql = "select * from usuario where login= '" + getLogin() + "' and senha= '" + getSenha() + "' " ;
+            tabela= con.RetornarResultset(sql);  
+            return tabela;
+      }
 }
