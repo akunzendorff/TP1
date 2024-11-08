@@ -85,7 +85,7 @@ public class Colmeia {
     }
     
     public void cadastrarColmeia(){
-        String sql = "Insert into colmeias (codigo, nome, locLat, locLong, tamanho, idAbelha) values " +
+        String sql = "Insert into colmeias (codigo, nome, locLat, locLong, tamanho, tipoAbelha) values " +
                 "(" + getCodigo() + ",'" + getNome() + "','" + getLocLat()
                 + "','" + getLocLong() + "','" + getTamanho() + "', '" + getTipoAbelha() + "' )";
         
@@ -104,7 +104,7 @@ public class Colmeia {
     
     public void excluirColmeia(){
         String sql;
-        sql = "Delete from colmeisa where codigo = " + getCodigo();
+        sql = "Delete from colmeia where codigo = " + getCodigo();
         
         con.executeSQL(sql);
         JOptionPane.showMessageDialog(null, "Registro excluido com sucesso.");
