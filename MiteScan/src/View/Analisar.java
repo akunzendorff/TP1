@@ -16,6 +16,7 @@ public class Analisar extends javax.swing.JFrame {
      */
     public Analisar() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -29,19 +30,19 @@ public class Analisar extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        btnMiteScan = new javax.swing.JLabel();
+        btnHome = new javax.swing.JLabel();
+        btnCadastroColmeia = new javax.swing.JLabel();
+        btnHistorico = new javax.swing.JLabel();
+        btnAnalisarColmeia = new javax.swing.JLabel();
+        btnPerfil = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
+        btnVoltar = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox();
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        btnAnalisar = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -49,35 +50,45 @@ public class Analisar extends javax.swing.JFrame {
 
         jPanel6.setBackground(new java.awt.Color(255, 201, 11));
 
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icones/mitescan-logo.png"))); // NOI18N
-        jLabel11.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnMiteScan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icones/mitescan-logo.png"))); // NOI18N
+        btnMiteScan.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel11MouseClicked(evt);
+                btnMiteScanMouseClicked(evt);
             }
         });
 
-        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icones/home-menor.png"))); // NOI18N
-        jLabel17.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnHome.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icones/home-menor.png"))); // NOI18N
+        btnHome.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel17MouseClicked(evt);
+                btnHomeMouseClicked(evt);
             }
         });
 
-        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icones/cadastrar-colmeia-pequeno.png"))); // NOI18N
-        jLabel18.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnCadastroColmeia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icones/cadastrar-colmeia-pequeno.png"))); // NOI18N
+        btnCadastroColmeia.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel18MouseClicked(evt);
+                btnCadastroColmeiaMouseClicked(evt);
             }
         });
 
-        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icones/historico-menor.png"))); // NOI18N
-
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icones/abelha-preta-média.png"))); // NOI18N
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icones/pessoas.png"))); // NOI18N
-        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnHistorico.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icones/historico-menor.png"))); // NOI18N
+        btnHistorico.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel1MouseClicked(evt);
+                btnHistoricoMouseClicked(evt);
+            }
+        });
+
+        btnAnalisarColmeia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icones/abelha-preta-média.png"))); // NOI18N
+        btnAnalisarColmeia.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnAnalisarColmeiaMouseClicked(evt);
+            }
+        });
+
+        btnPerfil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icones/pessoas.png"))); // NOI18N
+        btnPerfil.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnPerfilMouseClicked(evt);
             }
         });
 
@@ -86,56 +97,62 @@ public class Analisar extends javax.swing.JFrame {
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGap(31, 31, 31)
-                .addComponent(jLabel11)
+                .addGap(50, 50, 50)
+                .addComponent(btnMiteScan)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel17)
-                .addGap(45, 45, 45)
-                .addComponent(jLabel18)
-                .addGap(73, 73, 73)
-                .addComponent(jLabel19)
+                .addComponent(btnHome)
                 .addGap(55, 55, 55)
-                .addComponent(jLabel6)
-                .addGap(39, 39, 39)
-                .addComponent(jLabel1)
-                .addGap(47, 47, 47))
+                .addComponent(btnCadastroColmeia)
+                .addGap(55, 55, 55)
+                .addComponent(btnHistorico)
+                .addGap(55, 55, 55)
+                .addComponent(btnAnalisarColmeia)
+                .addGap(55, 55, 55)
+                .addComponent(btnPerfil)
+                .addGap(50, 50, 50))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel17)
-                            .addComponent(jLabel18)
-                            .addComponent(jLabel19)
-                            .addComponent(jLabel6))
-                        .addGroup(jPanel6Layout.createSequentialGroup()
-                            .addGap(10, 10, 10)
-                            .addComponent(jLabel1)))
-                    .addComponent(jLabel11))
-                .addContainerGap(33, Short.MAX_VALUE))
+                .addGap(30, 30, 30)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnMiteScan)
+                    .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(btnHome)
+                        .addComponent(btnCadastroColmeia)
+                        .addComponent(btnHistorico)
+                        .addComponent(btnAnalisarColmeia))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(btnPerfil)))
+                .addContainerGap(30, Short.MAX_VALUE))
         );
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 25)); // NOI18N
         jLabel4.setText("SELECIONE A COLMEIA:");
 
-        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icones/seta.png"))); // NOI18N
-        jLabel14.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnVoltar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icones/seta.png"))); // NOI18N
+        btnVoltar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel14MouseClicked(evt);
+                btnVoltarMouseClicked(evt);
             }
         });
 
-        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 32)); // NOI18N
         jLabel5.setText("ANALISAR AGORA");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Colmeia 1", "Colmeia 2", "Colmeia 3", "Colmeia 4" }));
+        jComboBox1.setToolTipText("");
+        jComboBox1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icones/imgAbelha.png"))); // NOI18N
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icones/btnAnalisar.png"))); // NOI18N
+        btnAnalisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icones/btnAnalisar.png"))); // NOI18N
+        btnAnalisar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnAnalisarMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -147,7 +164,7 @@ public class Analisar extends javax.swing.JFrame {
                 .addContainerGap())
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(170, 170, 170)
-                .addComponent(jLabel3)
+                .addComponent(btnAnalisar)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -156,7 +173,7 @@ public class Analisar extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
-                .addComponent(jLabel3)
+                .addComponent(btnAnalisar)
                 .addGap(26, 26, 26))
         );
 
@@ -168,38 +185,37 @@ public class Analisar extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(46, 46, 46)
-                        .addComponent(jLabel14)
+                        .addGap(50, 50, 50)
+                        .addComponent(btnVoltar)
                         .addGap(18, 18, 18)
                         .addComponent(jLabel5))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(125, 125, 125)
-                        .addComponent(jLabel4)
-                        .addGap(40, 40, 40)
-                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(199, 199, 199)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(196, Short.MAX_VALUE))
+                        .addGap(223, 223, 223)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel4)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(236, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(40, 40, 40)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel14)
-                    .addComponent(jLabel5))
+                    .addComponent(btnVoltar)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(11, 11, 11)
+                        .addComponent(jLabel5)))
+                .addGap(30, 30, 30)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(21, 21, 21)
-                        .addComponent(jLabel4))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(31, 31, 31)
-                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
+                    .addComponent(jLabel4)
+                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 67, Short.MAX_VALUE))
+                .addGap(0, 52, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -222,47 +238,68 @@ public class Analisar extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
+    private void btnMiteScanMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMiteScanMouseClicked
         // TODO add your handling code here:
         this.setVisible(false);
         Home h = new Home();
         h.setVisible(true);
-    }//GEN-LAST:event_jLabel11MouseClicked
+    }//GEN-LAST:event_btnMiteScanMouseClicked
 
-    private void jLabel17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel17MouseClicked
+    private void btnHomeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHomeMouseClicked
         // TODO add your handling code here:
         this.setVisible(false);
         Home h = new Home();
         h.setVisible(true);
-    }//GEN-LAST:event_jLabel17MouseClicked
+    }//GEN-LAST:event_btnHomeMouseClicked
 
-    private void jLabel18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel18MouseClicked
+    private void btnCadastroColmeiaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCadastroColmeiaMouseClicked
         // TODO add your handling code here:
         this.setVisible(false);
         FrmColmeia fc = new FrmColmeia();
         fc.setVisible(true);
-    }//GEN-LAST:event_jLabel18MouseClicked
+    }//GEN-LAST:event_btnCadastroColmeiaMouseClicked
 
-    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
+    private void btnPerfilMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPerfilMouseClicked
         // TODO add your handling code here:
         this.setVisible(false);
         FrmUsuario fu = new FrmUsuario();
         fu.setVisible(true);
-    }//GEN-LAST:event_jLabel1MouseClicked
+    }//GEN-LAST:event_btnPerfilMouseClicked
 
-    private void jLabel14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel14MouseClicked
+    private void btnVoltarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnVoltarMouseClicked
         // TODO add your handling code here:
         this.setVisible(false);
         Home h = new Home();
         h.setVisible(true);
-    }//GEN-LAST:event_jLabel14MouseClicked
+    }//GEN-LAST:event_btnVoltarMouseClicked
+
+    private void btnAnalisarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAnalisarMouseClicked
+        // TODO add your handling code here:
+        this.setVisible(false);
+        LoadingAnalise load = new LoadingAnalise();
+        load.setVisible(true);
+    }//GEN-LAST:event_btnAnalisarMouseClicked
+
+    private void btnHistoricoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHistoricoMouseClicked
+        // TODO add your handling code here:
+        this.setVisible(false);
+        Historico hist = new Historico();
+        hist.setVisible(true);
+    }//GEN-LAST:event_btnHistoricoMouseClicked
+
+    private void btnAnalisarColmeiaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAnalisarColmeiaMouseClicked
+        // TODO add your handling code here:
+        this.setVisible(false);
+        Analisar a = new Analisar();
+        a.setVisible(true);
+    }//GEN-LAST:event_btnAnalisarColmeiaMouseClicked
 
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+       //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
@@ -283,28 +320,29 @@ public class Analisar extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Analisar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-
+        
+        
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Analisar().setVisible(true);
+                new FrmLogin().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel btnAnalisar;
+    private javax.swing.JLabel btnAnalisarColmeia;
+    private javax.swing.JLabel btnCadastroColmeia;
+    private javax.swing.JLabel btnHistorico;
+    private javax.swing.JLabel btnHome;
+    private javax.swing.JLabel btnMiteScan;
+    private javax.swing.JLabel btnPerfil;
+    private javax.swing.JLabel btnVoltar;
     private javax.swing.JComboBox jComboBox1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel6;

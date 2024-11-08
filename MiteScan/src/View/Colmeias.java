@@ -30,21 +30,21 @@ public class Colmeias extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
+        btnMiteScan = new javax.swing.JLabel();
+        btnHome = new javax.swing.JLabel();
+        btnCadastrarColmeia = new javax.swing.JLabel();
+        btnHistorico = new javax.swing.JLabel();
+        btnAnalisar = new javax.swing.JLabel();
+        btnPerfil = new javax.swing.JLabel();
+        btnVoltar = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        btnAdicionar = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
+        btnEditar1 = new javax.swing.JLabel();
+        btnExcluir1 = new javax.swing.JLabel();
+        btnEditar2 = new javax.swing.JLabel();
+        btnExcluir2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -52,35 +52,40 @@ public class Colmeias extends javax.swing.JFrame {
 
         jPanel6.setBackground(new java.awt.Color(255, 201, 11));
 
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icones/mitescan-logo.png"))); // NOI18N
-        jLabel11.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnMiteScan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icones/mitescan-logo.png"))); // NOI18N
+        btnMiteScan.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel11MouseClicked(evt);
+                btnMiteScanMouseClicked(evt);
             }
         });
 
-        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icones/home-menor.png"))); // NOI18N
-        jLabel17.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnHome.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icones/home-menor.png"))); // NOI18N
+        btnHome.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel17MouseClicked(evt);
+                btnHomeMouseClicked(evt);
             }
         });
 
-        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icones/cadastrar-colmeia-pequeno.png"))); // NOI18N
-        jLabel18.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnCadastrarColmeia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icones/cadastrar-colmeia-pequeno.png"))); // NOI18N
+        btnCadastrarColmeia.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel18MouseClicked(evt);
+                btnCadastrarColmeiaMouseClicked(evt);
             }
         });
 
-        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icones/historico-menor.png"))); // NOI18N
-
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icones/abelha-preta-média.png"))); // NOI18N
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icones/pessoas.png"))); // NOI18N
-        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnHistorico.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icones/historico-menor.png"))); // NOI18N
+        btnHistorico.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel1MouseClicked(evt);
+                btnHistoricoMouseClicked(evt);
+            }
+        });
+
+        btnAnalisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icones/abelha-preta-média.png"))); // NOI18N
+
+        btnPerfil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icones/pessoas.png"))); // NOI18N
+        btnPerfil.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnPerfilMouseClicked(evt);
             }
         });
 
@@ -89,52 +94,52 @@ public class Colmeias extends javax.swing.JFrame {
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGap(31, 31, 31)
-                .addComponent(jLabel11)
+                .addGap(50, 50, 50)
+                .addComponent(btnMiteScan)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel17)
-                .addGap(45, 45, 45)
-                .addComponent(jLabel18)
-                .addGap(73, 73, 73)
-                .addComponent(jLabel19)
+                .addComponent(btnHome)
                 .addGap(55, 55, 55)
-                .addComponent(jLabel6)
-                .addGap(39, 39, 39)
-                .addComponent(jLabel1)
-                .addGap(47, 47, 47))
+                .addComponent(btnCadastrarColmeia)
+                .addGap(55, 55, 55)
+                .addComponent(btnHistorico)
+                .addGap(55, 55, 55)
+                .addComponent(btnAnalisar)
+                .addGap(55, 55, 55)
+                .addComponent(btnPerfil)
+                .addGap(50, 50, 50))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(26, 26, 26)
+                        .addGap(30, 30, 30)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel17)
-                            .addComponent(jLabel11)
-                            .addComponent(jLabel18)
-                            .addComponent(jLabel19)
-                            .addComponent(jLabel6)))
+                            .addComponent(btnHome)
+                            .addComponent(btnMiteScan)
+                            .addComponent(btnCadastrarColmeia)
+                            .addComponent(btnHistorico)
+                            .addComponent(btnAnalisar)))
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addGap(38, 38, 38)
-                        .addComponent(jLabel1)))
-                .addContainerGap(33, Short.MAX_VALUE))
+                        .addComponent(btnPerfil)))
+                .addContainerGap(30, Short.MAX_VALUE))
         );
 
-        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icones/seta.png"))); // NOI18N
-        jLabel14.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnVoltar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icones/seta.png"))); // NOI18N
+        btnVoltar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel14MouseClicked(evt);
+                btnVoltarMouseClicked(evt);
             }
         });
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jLabel4.setText("Minhas colmeias");
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icones/adicionar.png"))); // NOI18N
-        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnAdicionar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icones/adicionar.png"))); // NOI18N
+        btnAdicionar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel2MouseClicked(evt);
+                btnAdicionarMouseClicked(evt);
             }
         });
 
@@ -142,31 +147,31 @@ public class Colmeias extends javax.swing.JFrame {
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icones/colmeia1.png"))); // NOI18N
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icones/canetaEditar.png"))); // NOI18N
-        jLabel7.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnEditar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icones/canetaEditar.png"))); // NOI18N
+        btnEditar1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel7MouseClicked(evt);
+                btnEditar1MouseClicked(evt);
             }
         });
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icones/Lixo.png"))); // NOI18N
-        jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnExcluir1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icones/Lixo.png"))); // NOI18N
+        btnExcluir1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel8MouseClicked(evt);
+                btnExcluir1MouseClicked(evt);
             }
         });
 
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icones/canetaEditar.png"))); // NOI18N
-        jLabel9.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnEditar2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icones/canetaEditar.png"))); // NOI18N
+        btnEditar2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel9MouseClicked(evt);
+                btnEditar2MouseClicked(evt);
             }
         });
 
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icones/Lixo.png"))); // NOI18N
-        jLabel10.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnExcluir2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icones/Lixo.png"))); // NOI18N
+        btnExcluir2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel10MouseClicked(evt);
+                btnExcluir2MouseClicked(evt);
             }
         });
 
@@ -176,13 +181,13 @@ public class Colmeias extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(46, 46, 46)
-                .addComponent(jLabel14)
+                .addGap(50, 50, 50)
+                .addComponent(btnVoltar)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel2)
-                .addGap(84, 84, 84))
+                .addComponent(btnAdicionar)
+                .addGap(85, 85, 85))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -193,43 +198,43 @@ public class Colmeias extends javax.swing.JFrame {
                         .addComponent(jLabel5)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel7)
-                    .addComponent(jLabel8)
-                    .addComponent(jLabel9)
-                    .addComponent(jLabel10))
+                    .addComponent(btnEditar1)
+                    .addComponent(btnExcluir1)
+                    .addComponent(btnEditar2)
+                    .addComponent(btnExcluir2))
                 .addContainerGap(161, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel2)
+                    .addComponent(btnAdicionar)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
+                        .addGap(40, 40, 40)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel14)
+                            .addComponent(btnVoltar)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(9, 9, 9)
                                 .addComponent(jLabel4)))))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(62, 62, 62)
+                        .addGap(68, 68, 68)
                         .addComponent(jLabel5))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(92, 92, 92)
-                        .addComponent(jLabel7)
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel8)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 69, Short.MAX_VALUE)
+                        .addGap(109, 109, 109)
+                        .addComponent(btnEditar1)
+                        .addGap(28, 28, 28)
+                        .addComponent(btnExcluir1)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 63, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel3)
                         .addGap(77, 77, 77))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel9)
+                        .addComponent(btnEditar2)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel10)
+                        .addComponent(btnExcluir2)
                         .addGap(133, 133, 133))))
         );
 
@@ -253,65 +258,82 @@ public class Colmeias extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
+    private void btnMiteScanMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMiteScanMouseClicked
         // TODO add your handling code here:
         this.setVisible(false);
         Home h = new Home();
         h.setVisible(true);
-    }//GEN-LAST:event_jLabel11MouseClicked
+    }//GEN-LAST:event_btnMiteScanMouseClicked
 
-    private void jLabel17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel17MouseClicked
+    private void btnHomeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHomeMouseClicked
         // TODO add your handling code here:
         this.setVisible(false);
         Home h = new Home();
         h.setVisible(true);
-    }//GEN-LAST:event_jLabel17MouseClicked
+    }//GEN-LAST:event_btnHomeMouseClicked
 
-    private void jLabel18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel18MouseClicked
+    private void btnCadastrarColmeiaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCadastrarColmeiaMouseClicked
         // TODO add your handling code here:
         this.setVisible(false);
-        FrmColmeia fc = new FrmColmeia();
-        fc.setVisible(true);
-    }//GEN-LAST:event_jLabel18MouseClicked
+        Colmeias c = new Colmeias();
+        c.setVisible(true);
+    }//GEN-LAST:event_btnCadastrarColmeiaMouseClicked
 
-    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
+    private void btnPerfilMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPerfilMouseClicked
         // TODO add your handling code here:
         this.setVisible(false);
         FrmUsuario fu = new FrmUsuario();
         fu.setVisible(true);
-    }//GEN-LAST:event_jLabel1MouseClicked
+    }//GEN-LAST:event_btnPerfilMouseClicked
 
-    private void jLabel14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel14MouseClicked
+    private void btnVoltarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnVoltarMouseClicked
         // TODO add your handling code here:
         this.setVisible(false);
         Home h = new Home();
         h.setVisible(true);
-    }//GEN-LAST:event_jLabel14MouseClicked
+    }//GEN-LAST:event_btnVoltarMouseClicked
 
-    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
+    private void btnAdicionarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAdicionarMouseClicked
         // TODO add your handling code here:
         this.setVisible(false);
         FrmColmeia fc = new FrmColmeia();
         fc.setVisible(true);
-    }//GEN-LAST:event_jLabel2MouseClicked
+    }//GEN-LAST:event_btnAdicionarMouseClicked
 
-    private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
+    private void btnEditar1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEditar1MouseClicked
         // TODO add your handling code here:
         this.setVisible(false);
-        
-    }//GEN-LAST:event_jLabel7MouseClicked
+        EditarColmeia ec = new EditarColmeia();
+        ec.setVisible(true);
+    }//GEN-LAST:event_btnEditar1MouseClicked
 
-    private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
+    private void btnExcluir1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnExcluir1MouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel8MouseClicked
+        this.setVisible(false);
+        ExcluirColmeia exc = new ExcluirColmeia();
+        exc.setVisible(true);
+    }//GEN-LAST:event_btnExcluir1MouseClicked
 
-    private void jLabel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseClicked
+    private void btnEditar2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEditar2MouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel9MouseClicked
+        this.setVisible(false);
+        EditarColmeia ec = new EditarColmeia();
+        ec.setVisible(true);
+    }//GEN-LAST:event_btnEditar2MouseClicked
 
-    private void jLabel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseClicked
+    private void btnExcluir2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnExcluir2MouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_jLabel10MouseClicked
+        this.setVisible(false);
+        ExcluirColmeia exc = new ExcluirColmeia();
+        exc.setVisible(true);
+    }//GEN-LAST:event_btnExcluir2MouseClicked
+
+    private void btnHistoricoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHistoricoMouseClicked
+        // TODO add your handling code here:
+        this.setVisible(false);
+        Historico hist = new Historico();
+        hist.setVisible(true);
+    }//GEN-LAST:event_btnHistoricoMouseClicked
 
     /**
      * @param args the command line arguments
@@ -349,21 +371,21 @@ public class Colmeias extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel btnAdicionar;
+    private javax.swing.JLabel btnAnalisar;
+    private javax.swing.JLabel btnCadastrarColmeia;
+    private javax.swing.JLabel btnEditar1;
+    private javax.swing.JLabel btnEditar2;
+    private javax.swing.JLabel btnExcluir1;
+    private javax.swing.JLabel btnExcluir2;
+    private javax.swing.JLabel btnHistorico;
+    private javax.swing.JLabel btnHome;
+    private javax.swing.JLabel btnMiteScan;
+    private javax.swing.JLabel btnPerfil;
+    private javax.swing.JLabel btnVoltar;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel6;
     // End of variables declaration//GEN-END:variables
